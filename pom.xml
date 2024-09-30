@@ -13,7 +13,28 @@
   <description>The most basic of Java programs.</description>
   <url>https://www.coveros.com/</url>
   <inceptionYear>2018</inceptionYear>
-
+<profiles>
+    <profile>
+      <id>github</id>
+      <activation>
+        <property>
+          <name>useGitHubPackages</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <!-- GITHUB_REPOSITORY is set by the GitHub actions runner -->
+          <url>https://maven.pkg.github.com/${env.GITHUB_REPOSITORY}</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </distributionManagement>
+    </profile>
+  </profiles>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
