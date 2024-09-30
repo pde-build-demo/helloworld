@@ -39,7 +39,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <jdk.version>1.8</jdk.version>
-
+    <git-changelog-maven-plugin.version>1.78</git-changelog-maven-plugin.version>
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
   </properties>
 
