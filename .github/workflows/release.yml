@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
   packages: write
-  deployment: write
+  deployments: write
 
 jobs:
   build:
